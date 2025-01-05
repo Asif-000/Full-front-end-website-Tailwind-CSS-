@@ -13,62 +13,61 @@
     <header>
         <nav class="w-full bg-slate-200">
             <div class="container flex items-center justify-between px-5 py-4 mx-auto md:px-0">
-
-                <h2 class="text-4xl font-bold">HireGo</h2>
-
-
-                <div class="hidden md:flex justify-between w-full items-center">
+                <h2 class="text-4xl font-bold lg:mx-5 xl:mx-0">HireGo</h2>
     
-                <ul class="items-center hidden md:flex px-4 gap-4">
-                        <li><a class="nav_link" href="#">Products</a></li>
-                        <li><a class="nav_link" href="#">Solutions</a></li>
-                        <li><a class="nav_link" href="#">Why HireGo</a></li>
-                        <li><a class="nav_link" href="#">Pricing</a></li>
-                        <li><a class="nav_link" href="#">Resources</a></li>
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex justify-between w-full items-center">
+                    <ul class="items-center hidden md:flex px-4 gap-4">
+                        <li><a class="nav_link hover:text-gray-600" href="#">Products</a></li>
+                        <li><a class="nav_link hover:text-gray-600" href="#">Solutions</a></li>
+                        <li><a class="nav_link hover:text-gray-600" href="#">Why HireGo</a></li>
+                        <li><a class="nav_link hover:text-gray-600" href="#">Pricing</a></li>
+                        <li><a class="nav_link hover:text-gray-600" href="#">Resources</a></li>
                     </ul>
                     <ul class="flex items-center gap-4">
                         <li>
-                            <a class="flex items-center justify-center gap-2 px-5 py-2 border border-gray-400 rounded-3xl" href="#">English</a>
+                            <a class="flex items-center justify-center gap-2 px-5 py-2 border border-gray-400 rounded-3xl hover:border-gray-600" href="#">English</a>
                         </li>
                         <li>
-                            <a class="px-5 py-2 border border-gray-400 rounded-3xl" href="#">Log In</a>
+                            <a class="px-5 py-2 border border-gray-400 rounded-3xl hover:border-gray-600" href="#">Log In</a>
                         </li>
                         <li>
-                            <a class="px-5 py-2 text-white bg-black rounded-3xl" href="#">Request a demo</a>
+                            <a class="px-5 py-2 text-white bg-black rounded-3xl hover:text-gray-300" href="#">Request a demo</a>
                         </li>
                     </ul>
                 </div>
-
+    
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden" type="button">
+                <button class="lg:hidden" type="button" id="mobile-menu-button">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
-
+    
             <!-- Mobile Menu -->
-            <div class=" py-4 mobile-menu md:hidden flex flex-col items-center justify-center">
+            <div id="mobile-menu" class="py-4 lg:hidden flex flex-col items-center justify-center">
                 <ul class="space-y-4 text-center">
-                    <li><a class="block text-lg" href="#">Products</a></li>
-                    <li><a class="block text-lg" href="#">Solutions</a></li>
-                    <li><a class="block text-lg" href="#">Why HireGo</a></li>
-                    <li><a class="block text-lg" href="#">Pricing</a></li>
-                    <li><a class="block text-lg" href="#">Resources</a></li>
-                    <li><a class="flex items-center justify-center px-5 py-2 border border-gray-400 rounded-3xl" href="#">English</a></li>
-                    <li><a class="px-5 py-2 border border-gray-400 rounded-3xl" href="#">Log In</a></li>
-                    <li><a class="block px-4 py-2 text-white bg-black rounded-3xl" href="#">Request a Demo</a></li>
+                    <li><a class="block text-lg hover:text-gray-600" href="#">Products</a></li>
+                    <li><a class="block text-lg hover:text-gray-600" href="#">Solutions</a></li>
+                    <li><a class="block text-lg hover:text-gray-600" href="#">Why HireGo</a></li>
+                    <li><a class="block text-lg hover:text-gray-600" href="#">Pricing</a></li>
+                    <li><a class="block text-lg hover:text-gray-600" href="#">Resources</a></li>
+                    <li><a class="flex items-center justify-center px-5 py-2 border border-gray-400 rounded-3xl hover:border-gray-600" href="#">English</a></li>
+                    <li><a class="px-5 py-2 border border-gray-400 rounded-3xl hover:border-gray-600" href="#">Log In</a></li>
+                    <li><a class="block px-4 py-2 text-white bg-black rounded-3xl hover:text-gray-300" href="#">Request a Demo</a></li>
                 </ul>
             </div>
-        </nav>  
+        </nav>
     </header>
+    
     <main>
-        <section class="w-full bg-blue-300 rounded-xl py-8">
-            <div class="hero_container flex flex-col md:flex-row items-center justify-between px-4 max-w-screen-xl mx-auto">
+        <section class="w-full bg-blue-300 rounded-bl-3xl rounded-br-3xl py-8">
+            <div class="hero_container flex flex-col md:flex-row items-center justify-between px-4 max-w-screen-xl mx-auto md:my-16">
                 <!--Text Content -->
-                <div class="text-center md:text-left mb-8 md:mb-0 w-full md:w-1/2">
-                    <div class="mb-4">
-                        <h1 class="text-3xl md:text-5xl font-semibold leading-[1.2] text-black">
+                <div class="text-center md:text-left md:mx-12 xl:mx-0 mb-3 mt-4 md:mb-0 w-full md:w-1/2 md:mt-2">
+                    <div class="mb-2">
+                        <h1 class="text-3xl md:text-5xl  font-semibold leading-[1.2] text-black">
                             HireGO is your <br> all-in-one <br> Global People Platform
                         </h1>
                     </div>
@@ -88,7 +87,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="my-5 text-white bg-black px-8 py-3 rounded-full flex items-center justify-center hover:bg-gray-800 mx-auto md:mx-0">
+                    <button type="button" class="my-3 text-white bg-black px-8 py-3 rounded-full flex items-center justify-center hover:bg-gray-800 mx-auto md:mx-0">
                         Request a demo
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 size-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
@@ -97,8 +96,8 @@
                 </div>
             
                 <!--Image -->
-                <div class="flex justify-center md:justify-end items-center w-full md:w-1/2 mt-8 md:mt-0">
-                    <img class="object-cover w-full h-auto mt-10 mb-10 py-10 md:w-auto rounded-lg" src="./assets/images/1.png">
+                <div class="flex justify-center md:justify-end items-center w-full md:w-1/2 mt-1 md:mt-0">
+                    <img class="object-cover w-full h-auto mt-1 mb-1 py-1 md:w-auto rounded-lg" src="./assets/images/1.png">
                 </div>
             </div>
         </section>
@@ -415,7 +414,7 @@
             Grow further with HireGo.
         </h3>
         <div class="flex items-center">
-            <button type="button" class="flex items-center justify-center gap-2 px-8 py-4 mx-auto my-10 text-black font-medium bg-white rounded-full md:my-16 btn_flex md:px-12" aria-label="Request a demo">
+            <button type="button" class="flex items-center justify-center gap-2 px-8 py-4 mx-auto my-10 text-black font-medium bg-white rounded-full hover:bg-gray-300 md:my-16 btn_flex md:px-12" aria-label="Request a demo">
                 Request a demo
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
@@ -542,13 +541,10 @@
     </footer>
     <script>
         // Mobile Button js
-        document.addEventListener("DOMContentLoaded", () => {
-            const mobileMenuButton = document.querySelector("button.md\\:hidden");
-            const mobileMenu = document.querySelector(".mobile-menu");
-
-            mobileMenuButton.addEventListener("click", () => {
-                mobileMenu.classList.toggle("hidden");
-            });
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
 
         // Initialize Swiper
